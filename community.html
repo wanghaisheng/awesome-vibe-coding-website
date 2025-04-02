@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Community - VibeCodingHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg class="logo-svg" width="200" height="40" viewBox="0 0 200 40">
+                        <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                        <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                        <text x="65" y="25" class="logo-text" fill="#333333">VibeCodingHub</text>
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="learn.html" class="nav-link">Learn</a>
+                        <div class="dropdown-content">
+                            <a href="learn.html#what-is">What is Vibe Coding?</a>
+                            <a href="learn.html#pros-cons">Pros & Cons</a>
+                            <a href="learn.html#history">History & Key Figures</a>
+                            <a href="learn.html#concepts">Core Concepts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="tools.html" class="nav-link">Tools</a>
+                        <div class="dropdown-content">
+                            <a href="tools.html#directory">Tool Directory</a>
+                            <a href="tools.html#reviews">Reviews</a>
+                            <a href="tools.html#comparisons">Comparisons</a>
+                            <a href="tools.html#tutorials">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="prompts.html" class="nav-link">Prompts</a>
+                        <div class="dropdown-content">
+                            <a href="prompts.html#library">Prompt Library</a>
+                            <a href="prompts.html#techniques">Prompting Techniques</a>
+                            <a href="prompts.html#debugging">Debugging AI Code</a>
+                            <a href="prompts.html#submit">Submit a Prompt</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="community.html" class="nav-link active">Community</a>
+                        <div class="dropdown-content">
+                            <a href="#forum">Forum</a>
+                            <a href="#showcase">Project Showcase</a>
+                            <a href="#directory">Member Directory</a>
+                            <a href="#submit">Submit Your Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-button" id="searchToggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zm0 0l8 8" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="login-button">Login</button>
+                <button class="sign-up-button">Sign Up</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" placeholder="Search for tools, prompts, articles..." class="search-input">
+                <button class="search-close" id="searchClose">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 5L5 15M5 5l10 10" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Join the <span class="accent">Community</span></h1>
+                <p class="hero-subtitle">Connect with fellow vibe coders, share projects, and learn together</p>
+            </div>
+        </section>
+
+        <section id="forum" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Community <span class="accent">Forum</span></h2>
+                    <p>Engage in meaningful conversations about vibe coding tools, techniques, and projects</p>
+                </div>
+                
+                <div class="forum-categories">
+                    <div class="forum-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#f1f1f1"/>
+                                    <path d="M10,20 H30 M10,15 H25 M10,25 H20" stroke="#4A90E2" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3>General Discussion</h3>
+                                <p>Talk about anything related to vibe coding, AI tools, and coding with AI assistants</p>
+                            </div>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">423</span>
+                                <span class="stat-label">Topics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1.2K</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                        </div>
+                        <div class="category-latest">
+                            <div class="latest-post">
+                                <div class="post-title">
+                                    <a href="#">The future of vibe coding in enterprise settings</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-author">by @techvisionary</span>
+                                    <span class="post-date">2 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#f1f1f1"/>
+                                    <rect x="10" y="10" width="20" height="20" rx="2" stroke="#9013FE" stroke-width="2" fill="none"/>
+                                    <path d="M15,20 L18,23 L25,16" stroke="#9013FE" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3>Tools & Reviews</h3>
+                                <p>Discuss specific AI coding tools, share reviews, tips, and best practices</p>
+                            </div>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">287</span>
+                                <span class="stat-label">Topics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">956</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                        </div>
+                        <div class="category-latest">
+                            <div class="latest-post">
+                                <div class="post-title">
+                                    <a href="#">Cursor vs GitHub Copilot: My experience after 3 months</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-author">by @devpropro</span>
+                                    <span class="post-date">5 hours ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#f1f1f1"/>
+                                    <path d="M15,15 L25,25 M25,15 L15,25" stroke="#F5A623" stroke-width="2"/>
+                                    <circle cx="20" cy="20" r="10" stroke="#F5A623" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3>Prompt Engineering</h3>
+                                <p>Share and discuss effective prompting techniques for AI coding assistants</p>
+                            </div>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">342</span>
+                                <span class="stat-label">Topics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">1.5K</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                        </div>
+                        <div class="category-latest">
+                            <div class="latest-post">
+                                <div class="post-title">
+                                    <a href="#">7 prompting patterns that transformed my coding workflow</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-author">by @promptmaster</span>
+                                    <span class="post-date">Yesterday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="forum-category">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#f1f1f1"/>
+                                    <path d="M15,20 Q20,10 25,20" stroke="#4A90E2" stroke-width="2" fill="none"/>
+                                    <path d="M15,20 Q20,30 25,20" stroke="#4A90E2" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="category-info">
+                                <h3>Help & Support</h3>
+                                <p>Ask questions, get help with problems, and share solutions with the community</p>
+                            </div>
+                        </div>
+                        <div class="category-stats">
+                            <div class="stat">
+                                <span class="stat-value">512</span>
+                                <span class="stat-label">Topics</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">2.3K</span>
+                                <span class="stat-label">Posts</span>
+                            </div>
+                        </div>
+                        <div class="category-latest">
+                            <div class="latest-post">
+                                <div class="post-title">
+                                    <a href="#">How to generate consistent TypeScript interfaces with Claude?</a>
+                                </div>
+                                <div class="post-meta">
+                                    <span class="post-author">by @tsdev</span>
+                                    <span class="post-date">3 days ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="forum-actions">
+                    <a href="#" class="button primary">Join the Forum</a>
+                    <a href="#" class="button secondary">Browse All Topics</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="showcase" class="content-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Project <span class="accent">Showcase</span></h2>
+                    <p>Discover inspiring projects created with AI-powered vibe coding</p>
+                </div>
+                
+                <div class="project-filters">
+                    <button class="filter-button active" data-filter="all">All Projects</button>
+                    <button class="filter-button" data-filter="web">Web App</button>
+                    <button class="filter-button" data-filter="mobile">Mobile App</button>
+                    <button class="filter-button" data-filter="game">Game</button>
+                    <button class="filter-button" data-filter="tool">Tool/Utility</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-categories="web tool">
+                        <div class="project-image">
+                            <svg width="100%" height="200" viewBox="0 0 300 200">
+                                <rect width="300" height="200" fill="#f1f1f1"/>
+                                <rect x="50" y="50" width="200" height="100" rx="8" fill="#4A90E2" opacity="0.7"/>
+                                <path d="M100,100 L120,80 L140,100 L160,80 L180,100" stroke="white" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Prompt Management System</h3>
+                            <div class="project-meta">
+                                <span class="project-author">by @promptpro</span>
+                                <div class="project-tools">
+                                    <span class="tool-tag">Cursor</span>
+                                    <span class="tool-tag">Claude</span>
+                                </div>
+                            </div>
+                            <p class="project-description">A web-based system to organize, version, and share AI prompts. Built entirely through vibe coding with Cursor and Claude, with minimal manual coding needed.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="button secondary small">View Details</a>
+                                <a href="#" class="external-link">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-categories="mobile">
+                        <div class="project-image">
+                            <svg width="100%" height="200" viewBox="0 0 300 200">
+                                <rect width="300" height="200" fill="#f1f1f1"/>
+                                <rect x="110" y="30" width="80" height="140" rx="10" fill="#9013FE" opacity="0.7"/>
+                                <rect x="120" y="40" width="60" height="100" rx="2" fill="white" opacity="0.9"/>
+                                <circle cx="150" cy="150" r="8" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3>FitnessBuddy AI Coach</h3>
+                            <div class="project-meta">
+                                <span class="project-author">by @healthtech</span>
+                                <div class="project-tools">
+                                    <span class="tool-tag">GPT-4</span>
+                                    <span class="tool-tag">Replit</span>
+                                </div>
+                            </div>
+                            <p class="project-description">A mobile app that provides personalized workout plans and nutrition advice using AI. 90% of the code was generated through vibe coding sessions with minimal edits.</p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">AI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="button secondary small">View Details</a>
+                                <a href="#" class="external-link">App Store</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-categories="game">
+                        <div class="project-image">
+                            <svg width="100%" height="200" viewBox="0 0 300 200">
+                                <rect width="300" height="200" fill="#f1f1f1"/>
+                                <rect x="50" y="50" width="200" height="100" rx="8" fill="#F5A623" opacity="0.7"/>
+                                <circle cx="100" cy="100" r="20" fill="white"/>
+                                <rect x="150" y="80" width="80" height="40" rx="5" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3>Asteroid Runner</h3>
+                            <div class="project-meta">
+                                <span class="project-author">by @gamecreator</span>
+                                <div class="project-tools">
+                                    <span class="tool-tag">Cursor</span>
+                                    <span class="tool-tag">ChatGPT</span>
+                                </div>
+                            </div>
+                            <p class="project-description">A browser-based space game with procedurally generated levels. The entire game logic, physics, and rendering were created through vibe coding sessions.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Canvas API</span>
+                                <span class="tag">Game Dev</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="button secondary small">View Details</a>
+                                <a href="#" class="external-link">Play Game</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-categories="tool web">
+                        <div class="project-image">
+                            <svg width="100%" height="200" viewBox="0 0 300 200">
+                                <rect width="300" height="200" fill="#f1f1f1"/>
+                                <rect x="50" y="50" width="200" height="100" rx="8" fill="#4A90E2" opacity="0.7"/>
+                                <line x1="75" y1="75" x2="225" y2="75" stroke="white" stroke-width="2"/>
+                                <line x1="75" y1="100" x2="225" y2="100" stroke="white" stroke-width="2"/>
+                                <line x1="75" y1="125" x2="175" y2="125" stroke="white" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <h3>CodeReview Assistant</h3>
+                            <div class="project-meta">
+                                <span class="project-author">by @codequalityteam</span>
+                                <div class="project-tools">
+                                    <span class="tool-tag">Claude</span>
+                                    <span class="tool-tag">GitHub Copilot</span>
+                                </div>
+                            </div>
+                            <p class="project-description">A tool that integrates with GitHub to provide AI-powered code reviews. Analyzes PRs for bugs, security issues, and style guideline violations.</p>
+                            <div class="project-tags">
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">GitHub API</span>
+                                <span class="tag">AI</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="#" class="button secondary small">View Details</a>
+                                <a href="#" class="external-link">GitHub Repo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="#" class="button secondary">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="directory" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Member <span class="accent">Directory</span></h2>
+                    <p>Connect with other vibe coding enthusiasts and explore their work</p>
+                </div>
+                
+                <div class="members-search">
+                    <input type="text" placeholder="Search members by name, expertise, or tools..." class="members-search-input">
+                    <div class="members-filters">
+                        <select class="members-filter">
+                            <option value="">All Expertise</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                            <option value="fullstack">Full Stack</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="ai">AI/ML</option>
+                        </select>
+                        <select class="members-filter">
+                            <option value="">All Tools</option>
+                            <option value="cursor">Cursor</option>
+                            <option value="claude">Claude</option>
+                            <option value="chatgpt">ChatGPT</option>
+                            <option value="copilot">Copilot</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="members-grid">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="40" fill="#f1f1f1"/>
+                                <circle cx="40" cy="30" r="15" fill="#4A90E2"/>
+                                <path d="M40,50 Q20,50 15,70 H65 Q60,50 40,50" fill="#4A90E2"/>
+                            </svg>
+                        </div>
+                        <div class="member-info">
+                            <h3>Alex Riviera</h3>
+                            <div class="member-title">Frontend Developer</div>
+                            <div class="member-location">San Francisco, CA</div>
+                            <div class="member-stats">
+                                <div class="member-stat">
+                                    <span class="stat-value">12</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">54</span>
+                                    <span class="stat-label">Prompts</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">127</span>
+                                    <span class="stat-label">Posts</span>
+                                </div>
+                            </div>
+                            <div class="member-tools">
+                                <span class="tool-tag">Cursor</span>
+                                <span class="tool-tag">ChatGPT</span>
+                            </div>
+                            <a href="#" class="button secondary small">View Profile</a>
+                        </div>
+                    </div>
+                    
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="40" fill="#f1f1f1"/>
+                                <circle cx="40" cy="30" r="15" fill="#9013FE"/>
+                                <path d="M40,50 Q20,50 15,70 H65 Q60,50 40,50" fill="#9013FE"/>
+                            </svg>
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Johnson</h3>
+                            <div class="member-title">Full Stack Developer</div>
+                            <div class="member-location">Seattle, WA</div>
+                            <div class="member-stats">
+                                <div class="member-stat">
+                                    <span class="stat-value">8</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">32</span>
+                                    <span class="stat-label">Prompts</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">86</span>
+                                    <span class="stat-label">Posts</span>
+                                </div>
+                            </div>
+                            <div class="member-tools">
+                                <span class="tool-tag">Claude</span>
+                                <span class="tool-tag">Copilot</span>
+                            </div>
+                            <a href="#" class="button secondary small">View Profile</a>
+                        </div>
+                    </div>
+                    
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="40" fill="#f1f1f1"/>
+                                <circle cx="40" cy="30" r="15" fill="#F5A623"/>
+                                <path d="M40,50 Q20,50 15,70 H65 Q60,50 40,50" fill="#F5A623"/>
+                            </svg>
+                        </div>
+                        <div class="member-info">
+                            <h3>Michael Chen</h3>
+                            <div class="member-title">Mobile Developer</div>
+                            <div class="member-location">Austin, TX</div>
+                            <div class="member-stats">
+                                <div class="member-stat">
+                                    <span class="stat-value">5</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">17</span>
+                                    <span class="stat-label">Prompts</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">42</span>
+                                    <span class="stat-label">Posts</span>
+                                </div>
+                            </div>
+                            <div class="member-tools">
+                                <span class="tool-tag">Replit</span>
+                                <span class="tool-tag">ChatGPT</span>
+                            </div>
+                            <a href="#" class="button secondary small">View Profile</a>
+                        </div>
+                    </div>
+                    
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <svg width="80" height="80" viewBox="0 0 80 80">
+                                <circle cx="40" cy="40" r="40" fill="#f1f1f1"/>
+                                <circle cx="40" cy="30" r="15" fill="#4A90E2"/>
+                                <path d="M40,50 Q20,50 15,70 H65 Q60,50 40,50" fill="#4A90E2"/>
+                            </svg>
+                        </div>
+                        <div class="member-info">
+                            <h3>Lisa Rodriguez</h3>
+                            <div class="member-title">Backend Developer</div>
+                            <div class="member-location">New York, NY</div>
+                            <div class="member-stats">
+                                <div class="member-stat">
+                                    <span class="stat-value">7</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">29</span>
+                                    <span class="stat-label">Prompts</span>
+                                </div>
+                                <div class="member-stat">
+                                    <span class="stat-value">63</span>
+                                    <span class="stat-label">Posts</span>
+                                </div>
+                            </div>
+                            <div class="member-tools">
+                                <span class="tool-tag">Cursor</span>
+                                <span class="tool-tag">Claude</span>
+                            </div>
+                            <a href="#" class="button secondary small">View Profile</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section-footer">
+                    <a href="#" class="button secondary">View All Members</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="submit" class="content-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Submit Your <span class="accent">Project</span></h2>
+                    <p>Share your vibe coding creation with the community</p>
+                </div>
+                
+                <div class="submit-project-container">
+                    <form class="submit-project-form">
+                        <div class="form-group">
+                            <label for="projectTitle">Project Title</label>
+                            <input type="text" id="projectTitle" placeholder="E.g., AI-Powered Task Manager" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectDescription">Description</label>
+                            <textarea id="projectDescription" placeholder="Describe your project, its purpose, and how vibe coding helped you build it..." rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="projectCategory">Category</label>
+                                <select id="projectCategory" required>
+                                    <option value="">Select a category</option>
+                                    <option value="web">Web App</option>
+                                    <option value="mobile">Mobile App</option>
+                                    <option value="game">Game</option>
+                                    <option value="tool">Tool/Utility</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group half">
+                                <label>Tools Used</label>
+                                <div class="checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="cursor"> Cursor
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="claude"> Claude
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="chatgpt"> ChatGPT
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="copilot"> GitHub Copilot
+                                    </label>
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="tools" value="replit"> Replit
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectTechStack">Technologies Used</label>
+                            <input type="text" id="projectTechStack" placeholder="E.g., React, Node.js, MongoDB">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="projectLiveUrl">Live Demo URL (optional)</label>
+                                <input type="url" id="projectLiveUrl" placeholder="https://yourdemo.com">
+                            </div>
+                            
+                            <div class="form-group half">
+                                <label for="projectRepoUrl">Repository URL (optional)</label>
+                                <input type="url" id="projectRepoUrl" placeholder="https://github.com/yourusername/project">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectScreenshot">Project Screenshot or Preview Image</label>
+                            <input type="file" id="projectScreenshot" accept="image/*">
+                            <p class="form-help">Max file size: 5MB. Recommended dimensions: 1200x630px</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectStory">Your Vibe Coding Story</label>
+                            <textarea id="projectStory" placeholder="Share how you used vibe coding to build this project. What challenges did you face? How did AI tools help? What percentage of the code was AI-generated vs. hand-written?" rows="5"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="button primary">Submit Project</button>
+                        </div>
+                    </form>
+                    
+                    <div class="submission-guidelines">
+                        <h3>Submission Guidelines</h3>
+                        <ul>
+                            <li>Projects must be built using AI-assisted coding (vibe coding) techniques</li>
+                            <li>Include details about which parts were AI-generated vs. manually coded</li>
+                            <li>Projects should be complete and functional, not just concepts</li>
+                            <li>Open-source projects are encouraged but not required</li>
+                            <li>You must have the right to share all aspects of the project</li>
+                            <li>Screenshots and images should accurately represent the project</li>
+                        </ul>
+                        
+                        <div class="submission-note">
+                            <p>All submitted projects are reviewed by our moderation team before being published. By submitting a project, you grant VibeCodingHub the right to showcase it on our platform.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to start your vibe coding <span class="accent">journey</span>?</h2>
+                    <p>Learn about the tools and techniques that power the vibe coding revolution</p>
+                    <a href="learn.html" class="button primary">Start Learning</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column brand-column">
+                    <div class="footer-logo">
+                        <svg width="160" height="30" viewBox="0 0 200 40">
+                            <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                            <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                            <text x="65" y="25" class="logo-text" fill="#f8f9fa">VibeCodingHub</text>
+                        </svg>
+                    </div>
+                    <p class="brand-description">Your central hub for navigating the world of AI-powered vibe coding.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.85 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Site Map</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="prompts.html">Prompts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="learn.html#what-is">What is Vibe Coding?</a></li>
+                        <li><a href="tools.html#reviews">Tool Reviews</a></li>
+                        <li><a href="prompts.html#library">Prompt Library</a></li>
+                        <li><a href="community.html#forum">Forum</a></li>
+                        <li><a href="community.html#showcase">Project Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeCodingHub.borninsea.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

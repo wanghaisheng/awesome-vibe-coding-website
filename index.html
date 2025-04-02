@@ -1,132 +1,669 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="keywords" content="mobile, simulator, mobile design, mobile app">
-  <meta name="author" content="Your Name or Company">
-  <meta http-equiv="Content-Language" content="en">
-
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://www.yourwebsite.com/pc-simulator" />
-
-  <!-- Open Graph for Social Media -->
-  <meta property="og:title" content="PC Simulator">
-  <meta property="og:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta property="og:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta property="og:url" content="https://www.yourwebsite.com/pc-simulator">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="PC Simulator">
-  <meta name="twitter:description" content="A mobile simulator designed to demonstrate mobile interface design.">
-  <meta name="twitter:image" content="https://www.yourwebsite.com/pc-simulator-image.jpg">
-  <meta name="twitter:creator" content="@yourtwitterhandle">
-
-  <!-- Favicon -->
-  <link rel="icon" href="https://www.yourwebsite.com/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-XXXXX-Y');
-  </script>
-
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y) {
-      window.clarity=window.clarity||function(){(clarity.q=clarity.q||[]).push(arguments)};
-      clarity('set', 'anonymizeIP', true);
-      i=l.createElement('script');i.async=1;i.src=r;i.type='text/javascript';
-      t=l.getElementsByTagName('script')[0];t.parentNode.insertBefore(i,t);
-    })(document,window,'script','https://www.clarity.ms/tag/XXXXXX');
-  </script>
-
-  <title>PC Simulator</title>
-
-  <style>
-    /* Global Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-
-    .mobile-container {
-      width: 360px;
-      height: 640px;
-      border: 16px solid black;
-      border-radius: 16px;
-      background-color: #fff;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .content {
-      font-size: 1.2rem;
-      color: #333;
-    }
-
-    /* Adjustments for PC */
-    @media (min-width: 768px) {
-      .mobile-container {
-        width: 600px;
-        height: 1000px;
-      }
-
-      .content {
-        font-size: 1.5rem;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .mobile-container {
-        width: 800px;
-        height: 1400px;
-      }
-
-      .content {
-        font-size: 1.8rem;
-      }
-    }
-
-    /* Additional responsiveness for larger screens */
-    @media (min-width: 1200px) {
-      body {
-        justify-content: flex-start;
-      }
-
-      .mobile-container {
-        margin-top: 50px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCodingHub - Your Central Hub for AI-Powered Vibe Coding</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="mobile-container">
-    <div class="content">
-      <p>Mobile Simulator Screen</p>
-      <p>PC Version: Adjusted for larger screens.</p>
-    </div>
-  </div>
-</body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <svg class="logo-svg" width="200" height="40" viewBox="0 0 200 40">
+                        <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                        <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                        <text x="65" y="25" class="logo-text" fill="#333333">VibeCodingHub</text>
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Learn</a>
+                        <div class="dropdown-content">
+                            <a href="#">What is Vibe Coding?</a>
+                            <a href="#">Pros & Cons</a>
+                            <a href="#">History & Key Figures</a>
+                            <a href="#">Core Concepts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Tools</a>
+                        <div class="dropdown-content">
+                            <a href="#">Tool Directory</a>
+                            <a href="#">Reviews</a>
+                            <a href="#">Comparisons</a>
+                            <a href="#">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Prompts</a>
+                        <div class="dropdown-content">
+                            <a href="#">Prompt Library</a>
+                            <a href="#">Prompting Techniques</a>
+                            <a href="#">Debugging AI Code</a>
+                            <a href="#">Submit a Prompt</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link">Community</a>
+                        <div class="dropdown-content">
+                            <a href="#">Forum</a>
+                            <a href="#">Project Showcase</a>
+                            <a href="#">Member Directory</a>
+                            <a href="#">Submit Your Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-button" id="searchToggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zm0 0l8 8" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="login-button">Login</button>
+                <button class="sign-up-button">Sign Up</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" placeholder="Search for tools, prompts, articles..." class="search-input">
+                <button class="search-close" id="searchClose">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 5L5 15M5 5l10 10" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Your Central Hub for <span class="accent">AI-Powered</span> Vibe Coding</h1>
+                    <p class="hero-subtitle">Discover tools, techniques, community, and resources to transform how you create with AI</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="button primary">Explore Tools</a>
+                        <a href="#" class="button secondary">What is Vibe Coding?</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-visual">
+                        <pre><code>
+<span class="comment">// Vibe Coding in action</span>
+<span class="keyword">function</span> <span class="function">createComponent</span>(<span class="param">prompt</span>) {
+  <span class="keyword">const</span> <span class="variable">aiResponse</span> = <span class="function">vibeCoder</span>(<span class="param">prompt</span>);
+  <span class="keyword">return</span> <span class="variable">aiResponse</span>.<span class="property">toCode</span>();
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-separator">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#f8f9fa"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section class="what-is">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What is <span class="accent">Vibe Coding</span>?</h2>
+                    <p>A revolutionary approach to software development powered by AI</p>
+                </div>
+                <div class="what-is-content">
+                    <div class="what-is-text">
+                        <p>Vibe coding is an emerging development approach that leverages AI tools to transform natural language prompts into functional code. It blends intuitive communication with powerful code generation, making development more accessible and efficient.</p>
+                        <p>Rather than writing every line manually, developers "vibe" with AI assistants through conversation, describing their intent and collaboratively refining the output.</p>
+                        <a href="#" class="learn-more">Learn more about Vibe Coding →</a>
+                    </div>
+                    <div class="what-is-visual">
+                        <div class="visual-box">
+                            <svg width="300" height="200" viewBox="0 0 300 200">
+                                <path d="M50,100 Q150,20 250,100 Q150,180 50,100 Z" fill="url(#gradient)" opacity="0.7"/>
+                                <path d="M75,100 Q150,40 225,100 Q150,160 75,100 Z" fill="none" stroke="#9013FE" stroke-width="2"/>
+                                <circle cx="150" cy="100" r="40" fill="#f8f9fa" stroke="#4A90E2" stroke-width="2"/>
+                                <text x="150" y="105" font-size="12" text-anchor="middle">AI + Human</text>
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                        <stop offset="0%" stop-color="#4A90E2" stop-opacity="0.7"/>
+                                        <stop offset="100%" stop-color="#9013FE" stop-opacity="0.7"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-tools">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured <span class="accent">Tools</span></h2>
+                    <p>Discover the leading platforms that power vibe coding workflows</p>
+                </div>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-logo">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#111111"/>
+                                    <path d="M10,20 L20,10 L30,20 L20,30 Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <div class="tool-name">
+                                <h3>Cursor</h3>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="count">4.8/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="tool-description">The IDE designed for coding with AI. Built on VS Code, Cursor enhances your workflow with powerful code generation and editing.</p>
+                        <div class="tool-tags">
+                            <span class="tag">IDE</span>
+                            <span class="tag">Code Generation</span>
+                            <span class="tag">Free</span>
+                        </div>
+                        <a href="#" class="tool-link">View Review</a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-logo">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="20" fill="#5436DA"/>
+                                    <path d="M15,15 Q20,10 25,15 L25,25 Q20,30 15,25 Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <div class="tool-name">
+                                <h3>Claude</h3>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="count">4.7/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="tool-description">Anthropic's conversational AI assistant excels at nuanced coding tasks, generating clean code from descriptive prompts.</p>
+                        <div class="tool-tags">
+                            <span class="tag">Chatbot</span>
+                            <span class="tag">Versatile</span>
+                            <span class="tag">Web-based</span>
+                        </div>
+                        <a href="#" class="tool-link">View Review</a>
+                    </div>
+                    <div class="tool-card">
+                        <div class="tool-header">
+                            <div class="tool-logo">
+                                <svg width="40" height="40" viewBox="0 0 40 40">
+                                    <rect width="40" height="40" rx="8" fill="#F26207"/>
+                                    <path d="M12,20 L20,12 L28,20 L20,28 Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <div class="tool-name">
+                                <h3>Replit</h3>
+                                <div class="rating">
+                                    <span class="stars">★★★★☆</span>
+                                    <span class="count">4.5/5</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="tool-description">Online coding platform with integrated AI features. Ideal for quick prototyping, learning, and collaborative development.</p>
+                        <div class="tool-tags">
+                            <span class="tag">Platform</span>
+                            <span class="tag">Collaboration</span>
+                            <span class="tag">Browser-based</span>
+                        </div>
+                        <a href="#" class="tool-link">View Review</a>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="button secondary">Explore All Tools</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="prompt-library">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Prompt <span class="accent">Library</span></h2>
+                    <p>Discover effective prompts to supercharge your vibe coding sessions</p>
+                </div>
+                <div class="prompts-grid">
+                    <div class="prompt-card">
+                        <h3>React Component Generator</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @codemaster</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Creates clean, functional React components with props validation, styled-components integration, and documentation.</p>
+                        <div class="prompt-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Prompt</a>
+                    </div>
+                    <div class="prompt-card">
+                        <h3>API Endpoint Builder</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @backenddev</span>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Generates RESTful API endpoints with error handling, validation, and security best practices for Node.js.</p>
+                        <div class="prompt-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Prompt</a>
+                    </div>
+                    <div class="prompt-card">
+                        <h3>CSS Animation Creator</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @designwhiz</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Creates smooth, optimized CSS animations from simple descriptions, with browser compatibility considerations.</p>
+                        <div class="prompt-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">UI</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Prompt</a>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="button secondary">Browse All Prompts</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="community">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Join the <span class="accent">Community</span></h2>
+                    <p>Connect with fellow vibe coders, share projects, and learn together</p>
+                </div>
+                <div class="community-grid">
+                    <div class="community-feature">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <circle cx="25" cy="25" r="23" fill="none" stroke="#4A90E2" stroke-width="2"/>
+                                <circle cx="18" cy="20" r="4" fill="#4A90E2"/>
+                                <circle cx="32" cy="20" r="4" fill="#4A90E2"/>
+                                <circle cx="25" cy="35" r="5" fill="#4A90E2"/>
+                            </svg>
+                        </div>
+                        <h3>Forum Discussions</h3>
+                        <p>Engage in meaningful conversations about tools, techniques, and trends in vibe coding.</p>
+                        <a href="#" class="feature-link">Visit Forum</a>
+                    </div>
+                    <div class="community-feature">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <rect x="5" y="10" width="40" height="30" rx="2" fill="none" stroke="#9013FE" stroke-width="2"/>
+                                <line x1="5" y1="18" x2="45" y2="18" stroke="#9013FE" stroke-width="2"/>
+                                <circle cx="10" cy="14" r="2" fill="#9013FE"/>
+                                <circle cx="16" cy="14" r="2" fill="#9013FE"/>
+                            </svg>
+                        </div>
+                        <h3>Project Showcase</h3>
+                        <p>Discover inspiring projects created through vibe coding and share your own creations.</p>
+                        <a href="#" class="feature-link">Browse Showcase</a>
+                    </div>
+                    <div class="community-feature">
+                        <div class="feature-icon">
+                            <svg width="50" height="50" viewBox="0 0 50 50">
+                                <circle cx="25" cy="20" r="10" fill="none" stroke="#F5A623" stroke-width="2"/>
+                                <path d="M15,35 C15,30 20,25 25,25 C30,25 35,30 35,35" fill="none" stroke="#F5A623" stroke-width="2"/>
+                                <rect x="15" y="35" width="20" height="5" rx="2" fill="none" stroke="#F5A623" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <h3>Member Directory</h3>
+                        <p>Connect with other vibe coders, find collaborators, and build your network.</p>
+                        <a href="#" class="feature-link">Find Members</a>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="button primary">Join Community</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="starters">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vibe Coding <span class="accent">Starters</span></h2>
+                    <p>Ready-to-use templates and boilerplates to jump-start your next project</p>
+                </div>
+                <div class="starter-filters">
+                    <button class="filter-button active" data-filter="all">All Starters</button>
+                    <button class="filter-button" data-filter="free">Free</button>
+                    <button class="filter-button" data-filter="premium">Premium</button>
+                    <button class="filter-button" data-filter="saas">SaaS</button>
+                    <button class="filter-button" data-filter="app">Apps</button>
+                </div>
+                <div class="starters-grid">
+                    <div class="starter-card" data-categories="free app">
+                        <div class="starter-badge free">Free</div>
+                        <div class="starter-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <rect x="70" y="40" width="160" height="80" rx="8" fill="#4A90E2" opacity="0.7"/>
+                                <path d="M110,80 L130,60 L150,80 L170,60 L190,80" stroke="white" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>React Dashboard Starter</h3>
+                        <p class="starter-description">A responsive React dashboard template with charts, tables, and authentication flow.</p>
+                        <div class="starter-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">UI Kit</span>
+                        </div>
+                        <div class="starter-meta">
+                            <span class="starter-downloads">2.4K downloads</span>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="starter-actions">
+                            <a href="#" class="button secondary">View Details</a>
+                            <a href="#" class="button primary">Download</a>
+                        </div>
+                    </div>
+                    <div class="starter-card" data-categories="premium saas">
+                        <div class="starter-badge premium">Premium</div>
+                        <div class="starter-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <rect x="70" y="40" width="160" height="80" rx="8" fill="#9013FE" opacity="0.7"/>
+                                <rect x="85" y="60" width="50" height="10" rx="2" fill="white"/>
+                                <rect x="85" y="80" width="130" height="10" rx="2" fill="white"/>
+                                <rect x="85" y="100" width="90" height="10" rx="2" fill="white"/>
+                            </svg>
+                        </div>
+                        <h3>SaaS Subscription Platform</h3>
+                        <p class="starter-description">Complete SaaS starter with subscription management, user roles, and Stripe integration.</p>
+                        <div class="starter-tags">
+                            <span class="tag">Next.js</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">Auth</span>
+                        </div>
+                        <div class="starter-meta">
+                            <span class="starter-price">$79</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <div class="starter-actions">
+                            <a href="#" class="button secondary">View Details</a>
+                            <a href="#" class="button primary">Purchase</a>
+                        </div>
+                    </div>
+                    <div class="starter-card" data-categories="free app">
+                        <div class="starter-badge free">Free</div>
+                        <div class="starter-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <rect x="70" y="40" width="160" height="80" rx="8" fill="#F5A623" opacity="0.7"/>
+                                <circle cx="150" cy="80" r="30" stroke="white" stroke-width="3" fill="none"/>
+                                <line x1="150" y1="60" x2="150" y2="100" stroke="white" stroke-width="3"/>
+                                <line x1="130" y1="80" x2="170" y2="80" stroke="white" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <h3>Mobile App Boilerplate</h3>
+                        <p class="starter-description">React Native starter with navigation, state management, and common UI components.</p>
+                        <div class="starter-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Expo</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <div class="starter-meta">
+                            <span class="starter-downloads">1.8K downloads</span>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <div class="starter-actions">
+                            <a href="#" class="button secondary">View Details</a>
+                            <a href="#" class="button primary">Download</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="button secondary">Browse All Starters</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-news">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Latest <span class="accent">News</span></h2>
+                    <p>Stay informed about the evolving world of AI-powered development</p>
+                </div>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <path d="M50,80 Q150,20 250,80" fill="none" stroke="#4A90E2" stroke-width="3"/>
+                                <path d="M50,80 Q150,140 250,80" fill="none" stroke="#9013FE" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-category">Tool Update</span>
+                            <span class="news-date">May 15, 2023</span>
+                        </div>
+                        <h3>Cursor Introduces Advanced Debugging AI Features</h3>
+                        <p>The latest update to Cursor brings sophisticated AI-powered debugging capabilities, significantly streamlining the error resolution process.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <circle cx="150" cy="80" r="50" fill="none" stroke="#F5A623" stroke-width="3"/>
+                                <rect x="125" y="55" width="50" height="50" fill="none" stroke="#4A90E2" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-category">Industry</span>
+                            <span class="news-date">May 10, 2023</span>
+                        </div>
+                        <h3>Study Shows 60% Productivity Boost with Vibe Coding Approaches</h3>
+                        <p>New research indicates that developers using AI-assisted coding methods see significant improvements in productivity and work satisfaction.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <svg width="100%" height="160" viewBox="0 0 300 160">
+                                <rect width="300" height="160" fill="#f1f1f1"/>
+                                <polygon points="150,30 200,130 100,130" fill="none" stroke="#9013FE" stroke-width="3"/>
+                                <line x1="50" y1="80" x2="250" y2="80" stroke="#F5A623" stroke-width="3"/>
+                            </svg>
+                        </div>
+                        <div class="news-meta">
+                            <span class="news-category">Opinion</span>
+                            <span class="news-date">May 5, 2023</span>
+                        </div>
+                        <h3>The Ethics of AI-Generated Code in Production Environments</h3>
+                        <p>Leading technologists debate the implications, risks, and best practices for deploying AI-generated code in critical systems.</p>
+                        <a href="#" class="news-link">Read More</a>
+                    </div>
+                </div>
+                <div class="section-footer">
+                    <a href="#" class="button secondary">View All News</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-box">
+                    <div class="newsletter-content">
+                        <h2>Stay Updated <span class="accent">with VibeCodingHub</span></h2>
+                        <p>Subscribe to our newsletter for the latest tools, prompts, community highlights, and vibe coding news.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="button primary">Subscribe</button>
+                        </form>
+                        <p class="newsletter-note">We respect your privacy. You can unsubscribe at any time.</p>
+                    </div>
+                    <div class="newsletter-visual">
+                        <svg width="200" height="200" viewBox="0 0 200 200">
+                            <defs>
+                                <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" stop-color="#4A90E2" stop-opacity="0.8"/>
+                                    <stop offset="100%" stop-color="#9013FE" stop-opacity="0.8"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,100 C30,70 70,130 100,100 C130,70 170,130 200,100 C230,70 270,130 300,100" fill="none" stroke="url(#wave-gradient)" stroke-width="2">
+                                <animate attributeName="d" dur="5s" repeatCount="indefinite" values="
+                                    M0,100 C30,70 70,130 100,100 C130,70 170,130 200,100 C230,70 270,130 300,100;
+                                    M0,100 C30,130 70,70 100,100 C130,130 170,70 200,100 C230,130 270,70 300,100;
+                                    M0,100 C30,70 70,130 100,100 C130,70 170,130 200,100 C230,70 270,130 300,100
+                                "/>
+                            </path>
+                            <circle cx="100" cy="100" r="50" fill="none" stroke="#4A90E2" stroke-width="2">
+                                <animate attributeName="r" dur="4s" repeatCount="indefinite" values="50; 55; 50"/>
+                            </circle>
+                            <circle cx="100" cy="100" r="30" fill="none" stroke="#9013FE" stroke-width="2">
+                                <animate attributeName="r" dur="4s" repeatCount="indefinite" values="30; 35; 30"/>
+                            </circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ai-chatbot">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Ask the <span class="accent">AI Assistant</span></h2>
+                    <p>Have questions about vibe coding? Our AI assistant is here to help!</p>
+                </div>
+                <div class="chatbot-container">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="chat-message bot">
+                            <div class="message-avatar">
+                                <svg width="30" height="30" viewBox="0 0 40 40">
+                                    <circle cx="20" cy="20" r="20" fill="#9013FE"/>
+                                    <path d="M15,15 Q20,10 25,15 L25,25 Q20,30 15,25 Z" fill="#ffffff"/>
+                                </svg>
+                            </div>
+                            <div class="message-content">
+                                <p>Hi there! I'm your vibe coding assistant. Ask me anything about AI-powered coding, tools like Cursor, prompting techniques, or how to get started!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="userMessage" placeholder="Type your question here...">
+                        <button id="sendMessage" class="button primary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path d="M22 2L11 13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column brand-column">
+                    <div class="footer-logo">
+                        <svg width="160" height="30" viewBox="0 0 200 40">
+                            <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                            <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                            <text x="65" y="25" class="logo-text" fill="#f8f9fa">VibeCodingHub</text>
+                        </svg>
+                    </div>
+                    <p class="brand-description">Your central hub for navigating the world of AI-powered vibe coding.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.85 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Site Map</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="prompts.html">Prompts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">What is Vibe Coding?</a></li>
+                        <li><a href="#">Tool Reviews</a></li>
+                        <li><a href="#">Prompt Library</a></li>
+                        <li><a href="#">Forum</a></li>
+                        <li><a href="#">Project Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeCodingHub.borninsea.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

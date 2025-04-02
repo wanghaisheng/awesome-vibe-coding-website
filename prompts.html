@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibe Coding Prompts - VibeCodingHub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <svg class="logo-svg" width="200" height="40" viewBox="0 0 200 40">
+                        <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                        <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                        <text x="65" y="25" class="logo-text" fill="#333333">VibeCodingHub</text>
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="learn.html" class="nav-link">Learn</a>
+                        <div class="dropdown-content">
+                            <a href="learn.html#what-is">What is Vibe Coding?</a>
+                            <a href="learn.html#pros-cons">Pros & Cons</a>
+                            <a href="learn.html#history">History & Key Figures</a>
+                            <a href="learn.html#concepts">Core Concepts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="tools.html" class="nav-link">Tools</a>
+                        <div class="dropdown-content">
+                            <a href="tools.html#directory">Tool Directory</a>
+                            <a href="tools.html#reviews">Reviews</a>
+                            <a href="tools.html#comparisons">Comparisons</a>
+                            <a href="tools.html#tutorials">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="prompts.html" class="nav-link active">Prompts</a>
+                        <div class="dropdown-content">
+                            <a href="#library">Prompt Library</a>
+                            <a href="#techniques">Prompting Techniques</a>
+                            <a href="#debugging">Debugging AI Code</a>
+                            <a href="#submit">Submit a Prompt</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="community.html" class="nav-link">Community</a>
+                        <div class="dropdown-content">
+                            <a href="community.html#forum">Forum</a>
+                            <a href="community.html#showcase">Project Showcase</a>
+                            <a href="community.html#directory">Member Directory</a>
+                            <a href="community.html#submit">Submit Your Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="news.html" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-button" id="searchToggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zm0 0l8 8" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="login-button">Login</button>
+                <button class="sign-up-button">Sign Up</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" placeholder="Search for tools, prompts, articles..." class="search-input">
+                <button class="search-close" id="searchClose">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 5L5 15M5 5l10 10" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Prompt <span class="accent">Library</span></h1>
+                <p class="hero-subtitle">Discover effective prompts to supercharge your vibe coding sessions</p>
+            </div>
+        </section>
+
+        <section id="library" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Browse <span class="accent">Prompts</span></h2>
+                    <p>Find the perfect prompts for your AI-powered coding projects</p>
+                </div>
+
+                <div class="prompt-filters">
+                    <div class="filter-group">
+                        <label>Category:</label>
+                        <div class="button-group">
+                            <button class="filter-button active" data-filter="all">All</button>
+                            <button class="filter-button" data-filter="frontend">Frontend</button>
+                            <button class="filter-button" data-filter="backend">Backend</button>
+                            <button class="filter-button" data-filter="database">Database</button>
+                            <button class="filter-button" data-filter="mobile">Mobile</button>
+                            <button class="filter-button" data-filter="refactoring">Refactoring</button>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label>Tool:</label>
+                        <div class="button-group">
+                            <button class="filter-button active" data-filter="all">All</button>
+                            <button class="filter-button" data-filter="cursor">Cursor</button>
+                            <button class="filter-button" data-filter="claude">Claude</button>
+                            <button class="filter-button" data-filter="chatgpt">ChatGPT</button>
+                            <button class="filter-button" data-filter="copilot">Copilot</button>
+                        </div>
+                    </div>
+                    <div class="search-filter">
+                        <input type="text" placeholder="Search prompts..." id="promptSearch">
+                    </div>
+                </div>
+
+                <div class="prompts-grid">
+                    <div class="prompt-card" data-categories="frontend cursor chatgpt">
+                        <h3>React Component Generator</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @codemaster</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Creates clean, functional React components with props validation, styled-components integration, and documentation.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Create a React component named [ComponentName] that [description of what it should do]. 
+Include TypeScript props interface, styled-components for styling, and comprehensive JSDoc documentation.
+Make it responsive and accessible.
+Include unit tests using React Testing Library.</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Frontend</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+
+                    <div class="prompt-card" data-categories="backend claude">
+                        <h3>API Endpoint Builder</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @backenddev</span>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Generates RESTful API endpoints with error handling, validation, and security best practices for Node.js.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Create a complete Node.js Express API endpoint for [resource] that supports [operations].
+Include input validation with Joi, proper error handling, authentication middleware,
+and comprehensive swagger documentation.
+Follow RESTful principles and include unit tests.</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">API</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+
+                    <div class="prompt-card" data-categories="frontend cursor">
+                        <h3>CSS Animation Creator</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @designwhiz</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Creates smooth, optimized CSS animations from simple descriptions, with browser compatibility considerations.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Create a CSS animation that [description of animation].
+It should work on [list target browsers], be performant on mobile devices,
+and include fallbacks for older browsers.
+Provide both CSS and a simple HTML example to demonstrate.</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">CSS</span>
+                            <span class="tag">Animation</span>
+                            <span class="tag">UI</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+
+                    <div class="prompt-card" data-categories="database claude chatgpt">
+                        <h3>Database Schema Designer</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @datamodeler</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Designs optimized database schemas with proper relationships, indexing strategies, and migration scripts.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Design a database schema for a [type of application] with the following entities and relationships:
+[list entities and their relationships].
+Include appropriate indexes for performance, foreign key constraints,
+and provide migration scripts for PostgreSQL and MySQL.</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Database</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Schema Design</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+
+                    <div class="prompt-card" data-categories="mobile cursor">
+                        <h3>React Native Screen Generator</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @mobiledev</span>
+                            <div class="rating">
+                                <span class="stars">★★★★☆</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Creates complete React Native screens with navigation, state management, and responsive layouts.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Create a React Native screen for [screen purpose] with the following requirements:
+- Connect to Redux store for state management
+- Include navigation with React Navigation
+- Handle different device sizes
+- Include dark mode support
+- Implement loading states and error handling</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">React Native</span>
+                            <span class="tag">Mobile</span>
+                            <span class="tag">UI</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+
+                    <div class="prompt-card" data-categories="refactoring copilot claude">
+                        <h3>Code Refactoring Assistant</h3>
+                        <div class="prompt-meta">
+                            <span class="prompt-author">by @cleancodefan</span>
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                            </div>
+                        </div>
+                        <p class="prompt-description">Helps refactor messy code into clean, maintainable code using modern best practices and design patterns.</p>
+                        <div class="prompt-preview">
+                            <pre><code>Refactor the following code to improve readability, maintainability, and performance:
+
+[paste your code here]
+
+Apply these principles:
+- SOLID principles
+- Appropriate design patterns
+- Reduce complexity
+- Improve naming
+- Add comprehensive comments</code></pre>
+                        </div>
+                        <div class="prompt-tags">
+                            <span class="tag">Refactoring</span>
+                            <span class="tag">Clean Code</span>
+                            <span class="tag">Design Patterns</span>
+                        </div>
+                        <a href="#" class="prompt-link">View Full Prompt</a>
+                    </div>
+                </div>
+
+                <div class="section-footer">
+                    <a href="#" class="button secondary load-more">Load More Prompts</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="techniques" class="content-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Prompting <span class="accent">Techniques</span></h2>
+                    <p>Master the art of crafting effective prompts for AI coding assistants</p>
+                </div>
+                
+                <div class="techniques-grid">
+                    <div class="technique-card">
+                        <div class="technique-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <rect width="60" height="60" rx="10" fill="#f8f9fa"/>
+                                <path d="M15,25 H45 M15,35 H35" stroke="#4A90E2" stroke-width="3" fill="none"/>
+                                <circle cx="45" cy="35" r="5" fill="#4A90E2"/>
+                            </svg>
+                        </div>
+                        <h3>Role-Based Prompting</h3>
+                        <p>Assign a specific role to the AI, such as "experienced senior developer" or "UI/UX specialist," to shape the type and quality of code it generates.</p>
+                        <div class="technique-example">
+                            <h4>Example:</h4>
+                            <pre><code>Act as a senior React developer with 10 years of experience specializing in performance optimization. Review the following component and suggest improvements to enhance rendering efficiency and code organization:</code></pre>
+                        </div>
+                        <a href="#" class="technique-link">Learn More</a>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <rect width="60" height="60" rx="10" fill="#f8f9fa"/>
+                                <path d="M15,20 H45 M15,30 H45 M15,40 H45" stroke="#9013FE" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Chain of Thought</h3>
+                        <p>Guide the AI through a step-by-step reasoning process to solve complex coding problems, resulting in better thought-out and more robust solutions.</p>
+                        <div class="technique-example">
+                            <h4>Example:</h4>
+                            <pre><code>Let's create a secure user authentication system in Node.js. 
+First, think about what database we should use. 
+Then, consider password hashing strategies. 
+Next, design the API endpoints needed. 
+Finally, implement JWT token generation and validation.</code></pre>
+                        </div>
+                        <a href="#" class="technique-link">Learn More</a>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <rect width="60" height="60" rx="10" fill="#f8f9fa"/>
+                                <path d="M20,15 V45 M40,15 V45" stroke="#F5A623" stroke-width="3" fill="none"/>
+                                <path d="M20,30 H40" stroke="#F5A623" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Constraint-Based Prompting</h3>
+                        <p>Set specific constraints and requirements to narrow the AI's focus and ensure the generated code meets particular standards or patterns.</p>
+                        <div class="technique-example">
+                            <h4>Example:</h4>
+                            <pre><code>Create a Python function that sorts a list of dictionaries based on a specified key with these constraints:
+- Must have O(n log n) time complexity
+- Must handle missing keys gracefully
+- Must be fully type-hinted
+- Must include comprehensive docstrings
+- Must include unit tests</code></pre>
+                        </div>
+                        <a href="#" class="technique-link">Learn More</a>
+                    </div>
+                    
+                    <div class="technique-card">
+                        <div class="technique-icon">
+                            <svg width="60" height="60" viewBox="0 0 60 60">
+                                <rect width="60" height="60" rx="10" fill="#f8f9fa"/>
+                                <path d="M15,30 L30,15 L45,30 L30,45 Z" stroke="#4A90E2" stroke-width="3" fill="none"/>
+                            </svg>
+                        </div>
+                        <h3>Contextual Prompting</h3>
+                        <p>Provide rich context about the project, existing codebase, and architectural decisions to help the AI generate code that integrates seamlessly with your system.</p>
+                        <div class="technique-example">
+                            <h4>Example:</h4>
+                            <pre><code>Our project is a React e-commerce site using Redux for state management, Styled Components for styling, and Jest for testing. We follow Atomic Design principles. Our components are structured as:
+
+[paste folder structure]
+
+Please create a ProductCard component that fits our architecture and styling patterns to display product information consistently.</code></pre>
+                        </div>
+                        <a href="#" class="technique-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="debugging" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Debugging <span class="accent">AI Code</span></h2>
+                    <p>Effective strategies for fixing and improving AI-generated code</p>
+                </div>
+                
+                <div class="debugging-grid">
+                    <div class="debugging-card">
+                        <h3>Error Analysis Prompts</h3>
+                        <p>When AI-generated code contains errors, structure your follow-up prompts to help the AI analyze and fix specific issues while explaining its reasoning.</p>
+                        <div class="debugging-example">
+                            <h4>Example Prompt:</h4>
+                            <pre><code>The code you provided is throwing the following error:
+
+[paste error message]
+
+Please:
+1. Explain what's causing this error
+2. Provide a fix with comments explaining the changes
+3. Suggest how I could have prevented this issue</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="debugging-card">
+                        <h3>Code Review Requests</h3>
+                        <p>Ask the AI to perform a thorough code review on its own generated code, focusing on best practices, edge cases, and potential performance issues.</p>
+                        <div class="debugging-example">
+                            <h4>Example Prompt:</h4>
+                            <pre><code>Please review the following code you generated and identify:
+- Potential bugs or edge cases not handled
+- Security vulnerabilities
+- Performance bottlenecks
+- Areas that could be refactored for readability
+- Missing error handling
+
+For each issue found, explain why it's a problem and suggest a fix.</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="debugging-card">
+                        <h3>Implementation Alternatives</h3>
+                        <p>When AI-generated code works but doesn't seem optimal, ask for alternative implementations to compare approaches and understand tradeoffs.</p>
+                        <div class="debugging-example">
+                            <h4>Example Prompt:</h4>
+                            <pre><code>The solution you provided works, but I'm concerned about [specific issue].
+Could you provide 2-3 alternative implementations for this function,
+explaining the tradeoffs between them in terms of:
+- Performance characteristics
+- Memory usage
+- Readability and maintainability
+- Edge case handling</code></pre>
+                        </div>
+                    </div>
+                    
+                    <div class="debugging-card">
+                        <h3>Progressive Enhancement</h3>
+                        <p>Start with a basic working implementation and progressively enhance it through targeted follow-up prompts focusing on specific aspects.</p>
+                        <div class="debugging-example">
+                            <h4>Example Prompt Sequence:</h4>
+                            <pre><code>1. First prompt: "Create a basic form validation function for email inputs"
+2. Follow-up: "Now enhance it with more comprehensive validation rules"
+3. Follow-up: "Add detailed error messages for each validation failure"
+4. Follow-up: "Optimize the function for performance and readability"
+5. Follow-up: "Add TypeScript typing and JSDoc documentation"</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="submit" class="content-section alt-bg">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Submit a <span class="accent">Prompt</span></h2>
+                    <p>Share your effective prompts with the vibe coding community</p>
+                </div>
+                
+                <div class="submit-prompt-container">
+                    <form class="submit-prompt-form">
+                        <div class="form-group">
+                            <label for="promptTitle">Prompt Title</label>
+                            <input type="text" id="promptTitle" placeholder="E.g., React Component Generator" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="promptDescription">Description</label>
+                            <textarea id="promptDescription" placeholder="Describe what your prompt does and when to use it..." rows="3" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="promptContent">Prompt Content</label>
+                            <textarea id="promptContent" placeholder="Paste your prompt here..." rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group half">
+                                <label for="promptCategory">Category</label>
+                                <select id="promptCategory" required>
+                                    <option value="">Select a category</option>
+                                    <option value="frontend">Frontend</option>
+                                    <option value="backend">Backend</option>
+                                    <option value="database">Database</option>
+                                    <option value="mobile">Mobile</option>
+                                    <option value="refactoring">Refactoring</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group half">
+                                <label for="promptTool">Recommended Tool</label>
+                                <select id="promptTool" required>
+                                    <option value="">Select a tool</option>
+                                    <option value="cursor">Cursor</option>
+                                    <option value="claude">Claude</option>
+                                    <option value="chatgpt">ChatGPT</option>
+                                    <option value="copilot">GitHub Copilot</option>
+                                    <option value="any">Any AI Tool</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="promptTags">Tags (comma separated)</label>
+                            <input type="text" id="promptTags" placeholder="E.g., React, Components, TypeScript">
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="button primary">Submit Prompt</button>
+                        </div>
+                    </form>
+                    
+                    <div class="submission-guidelines">
+                        <h3>Submission Guidelines</h3>
+                        <ul>
+                            <li>Ensure your prompt is clear, specific, and well-structured</li>
+                            <li>Include placeholders in brackets [like this] for variables</li>
+                            <li>Provide a descriptive title that clearly indicates what the prompt creates</li>
+                            <li>Test your prompt with multiple AI tools before submitting</li>
+                            <li>Avoid submitting prompts that may generate harmful, unethical, or insecure code</li>
+                            <li>Provide context and specify requirements in your prompt for best results</li>
+                        </ul>
+                        
+                        <div class="submission-note">
+                            <p>All submitted prompts are reviewed by our moderation team before being published. By submitting a prompt, you agree to share it with the VibeCodingHub community under a Creative Commons Attribution license.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to explore <span class="accent">vibe coding</span> tools?</h2>
+                    <p>Discover the platforms that can transform how you create with AI</p>
+                    <a href="tools.html" class="button primary">Explore Tools</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column brand-column">
+                    <div class="footer-logo">
+                        <svg width="160" height="30" viewBox="0 0 200 40">
+                            <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                            <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                            <text x="65" y="25" class="logo-text" fill="#f8f9fa">VibeCodingHub</text>
+                        </svg>
+                    </div>
+                    <p class="brand-description">Your central hub for navigating the world of AI-powered vibe coding.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.85 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" stroke="#f8f9fa" fill="none" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Site Map</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="learn.html">Learn</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="prompts.html">Prompts</a></li>
+                        <li><a href="community.html">Community</a></li>
+                        <li><a href="news.html">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="learn.html#what-is">What is Vibe Coding?</a></li>
+                        <li><a href="tools.html#reviews">Tool Reviews</a></li>
+                        <li><a href="prompts.html#library">Prompt Library</a></li>
+                        <li><a href="community.html#forum">Forum</a></li>
+                        <li><a href="community.html#showcase">Project Showcase</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 VibeCodingHub.borninsea.com. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
