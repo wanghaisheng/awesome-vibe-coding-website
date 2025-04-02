@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor AI 提示库 - 提升您的编程效率 | VibeCodingHub</title>
+    
+    <!-- SEO元标签 -->
+    <meta name="description" content="探索专为Cursor AI设计的高效提示集合，包括代码生成、重构、调试和文档生成提示。提升您的AI辅助编程效率。">
+    <meta name="keywords" content="Cursor提示, AI编程提示, 代码生成提示, 提示工程, Cursor技巧">
+    
+    <!-- 规范链接 -->
+    <link rel="canonical" href="https://vibecodinghub.com/prompts/tools/cursor-prompts.html">
+    
+    <!-- 社交媒体元标签 -->
+    <meta property="og:title" content="Cursor AI 提示库 - 提升您的编程效率 | VibeCodingHub">
+    <meta property="og:description" content="探索专为Cursor AI设计的高效提示集合，包括代码生成、重构、调试和文档生成提示。提升您的AI辅助编程效率。">
+    <meta property="og:image" content="https://vibecodinghub.com/assets/images/prompts/cursor-prompts.jpg">
+    <meta property="og:url" content="https://vibecodinghub.com/prompts/tools/cursor-prompts.html">
+    <meta property="og:type" content="article">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="../../styles.css" as="style">
+    <link rel="preload" href="../../script.js" as="script">
+    
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- 网站图标 -->
+    <link rel="icon" href="../../favicon.ico">
+    <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+    
+    <!-- 结构化数据 - 面包屑导航 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "首页",
+          "item": "https://vibecodinghub.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "提示",
+          "item": "https://vibecodinghub.com/prompts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "工具提示",
+          "item": "https://vibecodinghub.com/prompts/tools/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Cursor提示",
+          "item": "https://vibecodinghub.com/prompts/tools/cursor-prompts.html"
+        }
+      ]
+    }
+    </script>
+    
+    <!-- 结构化数据 - 文章 -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Cursor AI 提示库 - 提升您的编程效率",
+      "description": "探索专为Cursor AI设计的高效提示集合，包括代码生成、重构、调试和文档生成提示。提升您的AI辅助编程效率。",
+      "image": "https://vibecodinghub.com/assets/images/prompts/cursor-prompts.jpg",
+      "author": {
+        "@type": "Organization",
+        "name": "VibeCodingHub",
+        "url": "https://vibecodinghub.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "VibeCodingHub",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://vibecodinghub.com/assets/images/logo.png"
+        }
+      },
+      "datePublished": "2023-05-10",
+      "dateModified": "2023-05-25"
+    }
+    </script>
+</head>
+<body>
+    <!-- 跳转到主内容的链接（无障碍功能） -->
+    <a href="#main-content" class="skip-link visually-hidden">跳转到主内容</a>
+    
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../index.html">
+                    <svg class="logo-svg" width="200" height="40" viewBox="0 0 200 40">
+                        <path class="logo-path" d="M10,20 L20,10 L30,20 L20,30 Z" fill="#4A90E2"/>
+                        <path class="logo-path-accent" d="M35,20 L45,10 L55,20 L45,30 Z" fill="#9013FE"/>
+                        <text x="65" y="25" class="logo-text" fill="#333333">VibeCodingHub</text>
+                    </svg>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item dropdown">
+                        <a href="../../learn/" class="nav-link">Learn</a>
+                        <div class="dropdown-content">
+                            <a href="../../learn/#what-is">What is Vibe Coding?</a>
+                            <a href="../../learn/#pros-cons">Pros & Cons</a>
+                            <a href="../../learn/#history">History & Key Figures</a>
+                            <a href="../../learn/#concepts">Core Concepts</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../../tools/" class="nav-link">Tools</a>
+                        <div class="dropdown-content">
+                            <a href="../../tools/#directory">Tool Directory</a>
+                            <a href="../../tools/#reviews">Reviews</a>
+                            <a href="../../tools/#comparisons">Comparisons</a>
+                            <a href="../../tools/#tutorials">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../../prompts/" class="nav-link active">Prompts</a>
+                        <div class="dropdown-content">
+                            <a href="../../prompts/#library">Prompt Library</a>
+                            <a href="../../prompts/#techniques">Prompting Techniques</a>
+                            <a href="../../prompts/#debugging">Debugging AI Code</a>
+                            <a href="../../prompts/#submit">Submit a Prompt</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="../../community/" class="nav-link">Community</a>
+                        <div class="dropdown-content">
+                            <a href="../../community/#forum">Forum</a>
+                            <a href="../../community/#showcase">Project Showcase</a>
+                            <a href="../../community/#directory">Member Directory</a>
+                            <a href="../../community/#submit">Submit Your Project</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../../news/" class="nav-link">News</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="search-button" id="searchToggle">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zm0 0l8 8" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="login-button">Login</button>
+                <button class="sign-up-button">Sign Up</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-overlay" id="searchOverlay">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" placeholder="搜索提示、工具、教程..." class="search-input">
+                <button class="search-close" id="searchClose">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M15 5L5 15M5 5l10 10" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main id="main-content">
+        <!-- 面包屑导航 -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs-list">
+                    <li><a href="../../index.html">首页</a></li>
+                    <li><a href="../../prompts/">提示</a></li>
+                    <li><a href="../../prompts/tools/">工具提示</a></li>
+                    <li>Cursor提示</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 页面头部 -->
+        <section class="page-header prompt-header">
+            <div class="container">
+                <div class="prompt-header-content">
+                    <div class="prompt-tool-logo">
+                        <svg width="80" height="80" viewBox="0 0 80 80">
+                            <rect width="80" height="80" rx="16" fill="#111111"/>
+                            <path d="M20,40 L40,20 L60,40 L40,60 Z" fill="#ffffff"/>
+                        </svg>
+                    </div>
+                    <div class="prompt-header-text">
+                        <h1>Cursor AI 提示库</h1>
+                        <p class="page-description">专为 Cursor 设计的高效提示集合，帮助您提升 AI 辅助编程效率</p>
+                        <div class="prompt-meta">
+                            <span class="prompt-count">包含 42 个提示</span>
+                            <span class="prompt-update">最后更新: 2023年5月25日</span>
+                        </div>
+                        <div class="prompt-actions">
+                            <a href="../../tools/reviews/cursor.html" class="button secondary">查看 Cursor 评测</a>
+                            <a href="#submit-prompt" class="button primary">提交新提示</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- 提示库内容 -->
+        <section class="prompts-content">
+            <div class="container">
+                <div class="prompts-layout">
+                    <div class="prompts-main">
+                        <!-- 介绍部分 -->
+                        <div class="prompts-section">
+                            <h2>Cursor 提示简介</h2>
+                            <p>Cursor 是一款强大的 AI 编程助手，通过合适的提示可以显著提高其效率和输出质量。本提示库收集了经过实践验证的高效提示，涵盖代码生成、重构、调试和文档生成等多个方面。</p>
+                            
+                            <p>使用这些提示时，请记住以下几点：</p>
+                            <ul class="tips-list">
+                                <li>根据您的具体需求调整提示内容</li>
+                                <li>提供足够的上下文信息以获得更准确的结果</li>
+                                <li>对于复杂任务，考虑使用多轮对话逐步完善</li>
+                                <li>始终审查和测试 AI 生成的代码</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 提示分类导航 -->
+                        <div class="prompts-nav">
+                            <h3>快速导航</h3>
+                            <div class="prompt-categories">
+                                <a href="#code-generation" class="prompt-category active">代码生成</a>
+                                <a href="#code-refactoring" class="prompt-category">代码重构</a>
+                                <a href="#debugging" class="prompt-category">调试与修复</a>
+                                <a href="#documentation" class="prompt-category">文档生成</a>
+                                <a href="#testing" class="prompt-category">测试相关</a>
+                                <a href="#project-setup" class="prompt-category">项目设置</a>
+                            </div>
+                        </div>
+                        
+                        <!-- 代码生成提示 -->
+                        <div id="code-generation" class="prompts-section">
+                            <h2>代码生成提示</h2>
+                            <p>这些提示专注于从头开始生成新代码，包括组件、函数、算法和完整模块。</p>
+                            
+                            <div class="prompts-list">
+                                <!-- 提示卡片 1 -->
+                                <div class="prompt-card">
+                                    <div class="prompt-card-header">
+                                        <h3>React 组件生成器</h3>
+                                        <div class="prompt-actions">
+                                            <button class="copy-button" data-prompt-id="react-component">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13 5h-3V2H4v10h3v2h8V5h-2zm-8-2h4v10H5V3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                复制
+                                            </button>
+                                            <button class="like-button" data-prompt-id="react-component">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 14l-1-1-5-5a3.5 3.5 0 115-5l1 1 1-1a3.5 3.5 0 115 5l-5 5-1 1z" stroke="currentColor" stroke-width="1.5"/>
+                                                </svg>
+                                                <span class="like-count">128</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-body">
+                                        <div class="prompt-description">
+                                            <p>生成功能完整的 React 组件，包括状态管理、事件处理和样式。</p>
+                                        </div>
+                                        <div class="prompt-content">
+                                            <pre><code>请创建一个名为 [组件名] 的 React 组件，具有以下功能：
+1. 显示 [描述组件外观和内容]
+2. 管理以下状态：[列出需要的状态]
+3. 处理以下事件：[列出需要处理的事件]
+4. 实现以下交互：[描述交互行为]
+5. 包含以下 props：[列出组件属性]
+
+请使用 [函数组件/类组件] 和 [React Hooks/Context API/Redux] 实现。
+组件应遵循最佳实践，包括性能优化和可访问性。
+请同时提供相关的 CSS/SCSS 样式。</code></pre>
+                                        </div>
+                                        <div class="prompt-example">
+                                            <h4>示例用法</h4>
+                                            <pre><code>请创建一个名为 UserProfile 的 React 组件，具有以下功能：
+1. 显示用户头像、姓名、简介和统计信息（关注者、帖子数）
+2. 管理以下状态：isEditing（编辑模式）、userData（用户数据）、isLoading（加载状态）
+3. 处理以下事件：编辑个人资料、保存更改、取消编辑
+4. 实现以下交互：点击编辑按钮切换到编辑模式，表单验证，提交时显示加载状态
+5. 包含以下 props：userId（必需）、onProfileUpdate（可选回调）、isCurrentUser（布尔值）
+
+请使用函数组件和 React Hooks 实现。
+组件应遵循最佳实践，包括性能优化和可访问性。
+请同时提供相关的 CSS 样式，使用 CSS 模块。</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-footer">
+                                        <div class="prompt-tags">
+                                            <span class="prompt-tag">React</span>
+                                            <span class="prompt-tag">前端</span>
+                                            <span class="prompt-tag">组件</span>
+                                        </div>
+                                        <div class="prompt-author">
+                                            <img src="../../assets/images/avatars/user1.webp" alt="作者头像" width="24" height="24">
+                                            <span>张开发</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 提示卡片 2 -->
+                                <div class="prompt-card">
+                                    <div class="prompt-card-header">
+                                        <h3>API 端点生成器</h3>
+                                        <div class="prompt-actions">
+                                            <button class="copy-button" data-prompt-id="api-endpoint">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13 5h-3V2H4v10h3v2h8V5h-2zm-8-2h4v10H5V3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                复制
+                                            </button>
+                                            <button class="like-button" data-prompt-id="api-endpoint">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 14l-1-1-5-5a3.5 3.5 0 115-5l1 1 1-1a3.5 3.5 0 115 5l-5 5-1 1z" stroke="currentColor" stroke-width="1.5"/>
+                                                </svg>
+                                                <span class="like-count">96</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-body">
+                                        <div class="prompt-description">
+                                            <p>生成完整的 API 端点实现，包括路由、控制器、验证和错误处理。</p>
+                                        </div>
+                                        <div class="prompt-content">
+                                            <pre><code>请为 [框架名称] 创建一个 [HTTP方法] API 端点，用于 [端点功能描述]。
+
+端点规格：
+- 路由: [路由路径]
+- 请求参数: [列出查询参数/路径参数]
+- 请求体: [描述请求体结构]
+- 响应: [描述成功响应结构]
+- 错误处理: [列出可能的错误情况和响应]
+
+实现要求：
+1. 包含输入验证
+2. 实现适当的错误处理
+3. 遵循 RESTful 最佳实践
+4. 添加必要的注释和文档字符串
+5. 包含数据库交互（如适用）
+
+请提供完整的代码实现。</code></pre>
+                                        </div>
+                                        <div class="prompt-example">
+                                            <h4>示例用法</h4>
+                                            <pre><code>请为 Express.js 创建一个 POST API 端点，用于用户注册。
+
+端点规格：
+- 路由: /api/auth/register
+- 请求参数: 无
+- 请求体: { username, email, password, confirmPassword }
+- 响应: { success: true, user: { id, username, email, createdAt }, token }
+- 错误处理: 邮箱已存在、密码不匹配、验证失败
+
+实现要求：
+1. 使用 Joi 或 express-validator 进行输入验证
+2. 实现适当的错误处理和状态码
+3. 遵循 RESTful 最佳实践
+4. 添加必要的注释和文档字符串
+5. 使用 Mongoose 与 MongoDB 交互
+6. 使用 bcrypt 加密密码
+7. 使用 JWT 生成认证令牌
+
+请提供完整的代码实现。</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-footer">
+                                        <div class="prompt-tags">
+                                            <span class="prompt-tag">API</span>
+                                            <span class="prompt-tag">后端</span>
+                                            <span class="prompt-tag">Express</span>
+                                        </div>
+                                        <div class="prompt-author">
+                                            <img src="../../assets/images/avatars/user2.webp" alt="作者头像" width="24" height="24">
+                                            <span>李程序</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- 提示卡片 3 -->
+                                <div class="prompt-card">
+                                    <div class="prompt-card-header">
+                                        <h3>算法实现助手</h3>
+                                        <div class="prompt-actions">
+                                            <button class="copy-button" data-prompt-id="algorithm">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13 5h-3V2H4v10h3v2h8V5h-2zm-8-2h4v10H5V3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                复制
+                                            </button>
+                                            <button class="like-button" data-prompt-id="algorithm">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 14l-1-1-5-5a3.5 3.5 0 115-5l1 1 1-1a3.5 3.5 0 115 5l-5 5-1 1z" stroke="currentColor" stroke-width="1.5"/>
+                                                </svg>
+                                                <span class="like-count">84</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-body">
+                                        <div class="prompt-description">
+                                            <p>生成高效、优化的算法实现，包括详细解释和复杂度分析。</p>
+                                        </div>
+                                        <div class="prompt-content">
+                                            <pre><code>请使用 [编程语言] 实现 [算法名称] 算法，要求如下：
+
+1. 提供算法的完整实现
+2. 包含详细的注释解释关键步骤
+3. 分析时间和空间复杂度
+4. 考虑边缘情况和错误处理
+5. 优化性能（如适用）
+6. 提供至少一个使用示例
+
+请同时简要解释算法的工作原理和适用场景。</code></pre>
+                                        </div>
+                                        <div class="prompt-example">
+                                            <h4>示例用法</h4>
+                                            <pre><code>请使用 Python 实现 Dijkstra 最短路径算法，要求如下：
+
+1. 提供算法的完整实现，使用邻接表表示图
+2. 包含详细的注释解释关键步骤
+3. 分析时间和空间复杂度
+4. 考虑边缘情况（如负权边、不连通图）和错误处理
+5. 使用优先队列优化性能
+6. 提供一个在实际图上查找最短路径的示例
+
+请同时简要解释算法的工作原理和适用场景，以及与其他最短路径算法（如 Bellman-Ford、Floyd-Warshall）的比较。</code></pre>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-footer">
+                                        <div class="prompt-tags">
+                                            <span class="prompt-tag">算法</span>
+                                            <span class="prompt-tag">Python</span>
+                                            <span class="prompt-tag">数据结构</span>
+                                        </div>
+                                        <div class="prompt-author">
+                                            <img src="../../assets/images/avatars/user3.webp" alt="作者头像" width="24" height="24">
+                                            <span>王前端</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="view-more">
+                                <button class="button secondary">查看更多代码生成提示</button>
+                            </div>
+                        </div>
+                        
+                        <!-- 代码重构提示 -->
+                        <div id="code-refactoring" class="prompts-section">
+                            <h2>代码重构提示</h2>
+                            <p>这些提示帮助您改进现有代码，提高可读性、性能和可维护性。</p>
+                            
+                            <div class="prompts-list">
+                                <!-- 提示卡片 4 -->
+                                <div class="prompt-card">
+                                    <div class="prompt-card-header">
+                                        <h3>代码优化专家</h3>
+                                        <div class="prompt-actions">
+                                            <button class="copy-button" data-prompt-id="code-optimization">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M13 5h-3V2H4v10h3v2h8V5h-2zm-8-2h4v10H5V3z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                复制
+                                            </button>
+                                            <button class="like-button" data-prompt-id="code-optimization">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M8 14l-1-1-5-5a3.5 3.5 0 115-5l1 1 1-1a3.5 3.5 0 115 5l-5 5-1 1z" stroke="currentColor" stroke-width="1.5"/>
+                                                </svg>
+                                                <span class="like-count">112</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="prompt-card-body">
+                                        <div class="prompt-description">
+                                            <p>优化代码性能、可读性和结构，同时保持功能不变。</p>
+                                        </div>
+                                        <div class="prompt-content">
+                                            <pre><code>请分析并优化以下代码，重点关注：
+
+1. 性能优化（时间和空间复杂度）
+2. 代码可读性和清晰度
+3. 最佳实践和设计模式应用
+4. 潜在的错误和边缘情况处理
+5. 代码结构和组织
+
+请提供优化后的代码，并解释所做的更改及其好处。确保保持原有功能不变。
